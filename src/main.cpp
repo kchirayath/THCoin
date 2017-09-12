@@ -29,7 +29,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x07625a79a57fd9f9d6d61ee9924fca32a32e24a691b45742d780bf11ba67a8fe");
+uint256 hashGenesisBlock("0x6311c1b90e05a4218d00be96e39922e85732a9b901d4056f77c4a69a8e86c184");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1987,7 +1987,7 @@ bool LoadBlockIndex(bool fAllowNew)
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb8;
         pchMessageStart[3] = 0xdb;
-        hashGenesisBlock = uint256("0x07625a79a57fd9f9d6d61ee9924fca32a32e24a691b45742d780bf11ba67a8fe");
+        hashGenesisBlock = uint256("0x6311c1b90e05a4218d00be96e39922e85732a9b901d4056f77c4a69a8e86c184");
     }
 
     //
@@ -2019,7 +2019,7 @@ bool LoadBlockIndex(bool fAllowNew)
 	// vMerkleTree: 5a2e19825b
         
         // Genesis block
-        const char* pszTimestamp = "Chess federation fuming over treatment of Canadian grandmaster who was berated over wearing shorts at tournament 09/12/2017 - THCoin 1505182151";
+        const char* pszTimestamp = "Chess federation fuming over treatment of Canadian grandmaster who was berated over wearing shorts at tournament 09/12/2017 - THCoin 1505257455";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2031,24 +2031,24 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1505181964;
+        block.nTime    = 1505257455;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 387307896;
+        block.nNonce   = 1245734;
 
         if (fTestNet)
         {
-            block.nTime    = 1505181964;
-            block.nNonce   = 387307896;
+            block.nTime    = 1505257455;
+            block.nNonce   = 1245734;
         }
 
         //// debug print
         printf("%s\n", block.GetHash().ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x5e561e6c72e64fffe0cb413c8db684fbeabccf712152a43a77843ac34f6448dd"));
+        assert(block.hashMerkleRoot == uint256("0xc71d6279d324bac199cdb2f9bbd47950ff2508e72b8987aff12d6ad89ddea2e5"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
