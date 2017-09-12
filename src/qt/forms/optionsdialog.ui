@@ -79,10 +79,17 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Automatically start SmallChange after logging in to the system.</string>
          </property>
          <property name="text">
           <string>&amp;Start SmallChange on system login</string>
+=======
+          <string>Automatically start THCoin after logging in to the system.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Start THCoin on system login</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
         </widget>
        </item>
@@ -119,7 +126,11 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Automatically open the SmallChange client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+=======
+          <string>Automatically open the THCoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -129,7 +140,11 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Connect to the SmallChange network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+=======
+          <string>Connect to the THCoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
@@ -303,7 +318,11 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
+<<<<<<< HEAD
             <string>The user interface language can be set here. This setting will take effect after restarting SmallChange.</string>
+=======
+            <string>The user interface language can be set here. This setting will take effect after restarting THCoin.</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
            </property>
           </widget>
          </item>
@@ -336,7 +355,11 @@
        <item>
         <widget class="QCheckBox" name="displayAddresses">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Whether to show SmallChange addresses in the transaction list or not.</string>
+=======
+          <string>Whether to show THCoin addresses in the transaction list or not.</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="text">
           <string>&amp;Display addresses in transaction list</string>

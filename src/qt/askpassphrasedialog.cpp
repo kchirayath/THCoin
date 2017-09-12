@@ -98,7 +98,11 @@ void AskPassphraseDialog::accept()
             break;
         }
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm wallet encryption"),
+<<<<<<< HEAD
                  tr("WARNING: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR SMALLCHANGE</b>!\nAre you sure you wish to encrypt your wallet?"),
+=======
+                 tr("WARNING: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR THCOIN</b>!\nAre you sure you wish to encrypt your wallet?"),
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
                  QMessageBox::Yes|QMessageBox::Cancel,
                  QMessageBox::Cancel);
         if(retval == QMessageBox::Yes)
@@ -108,7 +112,11 @@ void AskPassphraseDialog::accept()
                 if(model->setWalletEncrypted(true, newpass1))
                 {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
+<<<<<<< HEAD
                                          tr("SmallChange will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your smallchange from being stolen by malware infecting your computer."));
+=======
+                                         tr("THCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your thcoin from being stolen by malware infecting your computer."));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
                     QApplication::quit();
                 }
                 else

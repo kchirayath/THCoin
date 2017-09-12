@@ -175,7 +175,11 @@ void OverviewPage::setModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
+<<<<<<< HEAD
     // update the display unit, to not use the default ("SMC")
+=======
+    // update the display unit, to not use the default ("THC")
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     updateDisplayUnit();
 }
 

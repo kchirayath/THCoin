@@ -340,7 +340,11 @@ macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/bitcoin.icns
+<<<<<<< HEAD
 macx:TARGET = "smallchange-qt"
+=======
+macx:TARGET = "thcoin-qt"
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 
 # Set libraries and includes at end, to use platform-defined defaults if not overridden
 INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH $$QRENCODE_INCLUDE_PATH

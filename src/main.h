@@ -40,7 +40,11 @@ static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const int64 MIN_TX_FEE = 10000000;
 static const int64 MIN_RELAY_TX_FEE = MIN_TX_FEE;
+<<<<<<< HEAD
 static const int64 MAX_MONEY = 42007680 * COIN; // maximum of 42 007 680 coins
+=======
+static const int64 MAX_MONEY = 420420420420 * COIN; // maximum of 420,420,420,420 coins
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 static const int COINBASE_MATURITY = 10;
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -547,7 +551,11 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
+<<<<<<< HEAD
         return dPriority > COIN * 5760 / 250; // 5760 blocks found a day. Priority cutoff is 1 SMC day / 250 bytes.
+=======
+        return dPriority > COIN * 4200 / 250; // 4200 blocks found a day. Priority cutoff is 1 THC day / 250 bytes.
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     }
 
     int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const

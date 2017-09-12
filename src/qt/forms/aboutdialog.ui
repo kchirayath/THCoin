@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
+<<<<<<< HEAD
    <string>About SmallChange</string>
+=======
+   <string>About THCoin</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -50,7 +54,11 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>&lt;b&gt;SmallChange&lt;/b&gt; version</string>
+=======
+          <string>&lt;b&gt;THCoin&lt;/b&gt; version</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

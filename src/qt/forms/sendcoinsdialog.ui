@@ -119,7 +119,11 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>123.456 SMC</string>
+=======
+          <string>123.456 THC</string>
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

@@ -212,7 +212,11 @@ void MiningPage::minerError(QProcess::ProcessError error)
 {
     if (error == QProcess::FailedToStart)
     {
+<<<<<<< HEAD
         reportToList("Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as smallchange-qt.", ERROR, NULL);
+=======
+        reportToList("Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as thcoin-qt.", ERROR, NULL);
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     }
 }
 

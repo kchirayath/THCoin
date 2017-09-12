@@ -70,7 +70,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     resize(850, 550);
+<<<<<<< HEAD
     setWindowTitle(tr("SmallChange") + " - " + tr("Wallet"));
+=======
+    setWindowTitle(tr("THCoin") + " - " + tr("Wallet"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 #ifndef Q_WS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -223,7 +227,11 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(receiveCoinsAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
+<<<<<<< HEAD
     sendCoinsAction->setToolTip(tr("Send coins to a SmallChange address"));
+=======
+    sendCoinsAction->setToolTip(tr("Send coins to a THCoin address"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -268,17 +276,29 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
+<<<<<<< HEAD
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About SmallChange"), this);
     aboutAction->setToolTip(tr("Show information about SmallChange"));
+=======
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About THCoin"), this);
+    aboutAction->setToolTip(tr("Show information about THCoin"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
+<<<<<<< HEAD
     optionsAction->setToolTip(tr("Modify configuration options for SmallChange"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("Show/Hide &SmallChange"), this);
     toggleHideAction->setToolTip(tr("Show or hide the SmallChange window"));
+=======
+    optionsAction->setToolTip(tr("Modify configuration options for THCoin"));
+    optionsAction->setMenuRole(QAction::PreferencesRole);
+    toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("Show/Hide &THCoin"), this);
+    toggleHideAction->setToolTip(tr("Show or hide the THCoin window"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     exportAction = new QAction(QIcon(":/icons/export"), tr("&Export..."), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -371,7 +391,11 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if(trayIcon)
             {
+<<<<<<< HEAD
                 trayIcon->setToolTip(tr("SmallChange client") + QString(" ") + tr("[testnet]"));
+=======
+                trayIcon->setToolTip(tr("THCoin client") + QString(" ") + tr("[testnet]"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -435,7 +459,11 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
+<<<<<<< HEAD
     trayIcon->setToolTip(tr("SmallChange client"));
+=======
+    trayIcon->setToolTip(tr("THCoin client"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -472,7 +500,11 @@ void BitcoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason == QSystemTrayIcon::Trigger)
     {
+<<<<<<< HEAD
         // Click on system tray icon triggers "show/hide SmallChange"
+=======
+        // Click on system tray icon triggers "show/hide THCoin"
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
         toggleHideAction->trigger();
     }
 }
@@ -506,7 +538,11 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+<<<<<<< HEAD
     labelConnectionsIcon->setToolTip(tr("%n active connection(s) to SmallChange network", "", count));
+=======
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to THCoin network", "", count));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -622,12 +658,20 @@ void BitcoinGUI::setMining(bool mining, int hashrate)
     if (mining)
     {
         labelMiningIcon->setPixmap(QIcon(":/icons/mining_active").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+<<<<<<< HEAD
         labelMiningIcon->setToolTip(tr("Mining SmallChange at %1 hashes per second").arg(hashrate));
+=======
+        labelMiningIcon->setToolTip(tr("Mining THCoin at %1 hashes per second").arg(hashrate));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     }
     else
     {
         labelMiningIcon->setPixmap(QIcon(":/icons/mining_inactive").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+<<<<<<< HEAD
         labelMiningIcon->setToolTip(tr("Not mining SmallChange"));
+=======
+        labelMiningIcon->setToolTip(tr("Not mining THCoin"));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     }
 }
 
@@ -842,7 +886,11 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
+<<<<<<< HEAD
             notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid SmallChange address or malformed URI parameters."));
+=======
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid THCoin address or malformed URI parameters."));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     }
 
     event->acceptProposedAction();
@@ -857,7 +905,11 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
+<<<<<<< HEAD
         notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid SmallChange address or malformed URI parameters."));
+=======
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid THCoin address or malformed URI parameters."));
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

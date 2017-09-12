@@ -93,7 +93,11 @@ void EditAddressDialog::accept()
             break;
         case AddressTableModel::INVALID_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
+<<<<<<< HEAD
                 tr("The entered address \"%1\" is not a valid SmallChange address.").arg(ui->addressEdit->text()),
+=======
+                tr("The entered address \"%1\" is not a valid THCoin address.").arg(ui->addressEdit->text()),
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
                 QMessageBox::Ok, QMessageBox::Ok);
             return;
         case AddressTableModel::WALLET_UNLOCK_FAILURE:

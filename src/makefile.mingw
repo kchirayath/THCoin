@@ -68,7 +68,11 @@ OBJS= \
     obj/noui.o
 
 
+<<<<<<< HEAD
 all: smallchange.exe
+=======
+all: thcoin.exe
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 
 obj/scrypt.o: scrypt.c
 	gcc -c $(CFLAGS) -o $@ $^
@@ -76,7 +80,11 @@ obj/scrypt.o: scrypt.c
 obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
 
+<<<<<<< HEAD
 smallchange.exe: $(OBJS:obj/%=obj/%)
+=======
+thcoin.exe: $(OBJS:obj/%=obj/%)
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 	g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -84,11 +92,19 @@ TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 obj-test/%.o: test/%.cpp $(HEADERS)
 	g++ -c $(TESTDEFS) $(CFLAGS) -o $@ $<
 
+<<<<<<< HEAD
 test_smallchange.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
 
 clean:
 	-del /Q smallchange test_smallchange
+=======
+test_thcoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+	g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
+
+clean:
+	-del /Q thcoin test_thcoin
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 	-del /Q obj\*
 	-del /Q obj-test\*
 	-del /Q build.h

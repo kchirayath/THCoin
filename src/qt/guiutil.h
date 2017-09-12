@@ -15,7 +15,11 @@ class QAbstractItemView;
 QT_END_NAMESPACE
 class SendCoinsRecipient;
 
+<<<<<<< HEAD
 /** Utility functions used by the smallchange-qt UI.
+=======
+/** Utility functions used by the thcoin-qt UI.
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
  */
 namespace GUIUtil
 {
@@ -30,7 +34,11 @@ namespace GUIUtil
     void setupAddressWidget(QLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
+<<<<<<< HEAD
     // Parse "smallchange:" URI into recipient object, return true on succesful parsing
+=======
+    // Parse "thcoin:" URI into recipient object, return true on succesful parsing
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
     // See Bitcoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);

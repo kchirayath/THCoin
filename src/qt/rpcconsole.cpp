@@ -210,7 +210,11 @@ void RPCConsole::clear()
                 "b { color: #006060; } "
                 );
 
+<<<<<<< HEAD
     message(CMD_REPLY, (tr("Welcome to the SmallChange RPC console.") + "<br>" +
+=======
+    message(CMD_REPLY, (tr("Welcome to the THCoin RPC console.") + "<br>" +
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
                         tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.")), true);
 }

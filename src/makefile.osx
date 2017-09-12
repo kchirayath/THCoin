@@ -3,7 +3,11 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
+<<<<<<< HEAD
 # Mac OS X makefile for SmallChange
+=======
+# Mac OS X makefile for THCoin
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=llvm-g++
@@ -26,7 +30,11 @@ LIBS= -dead_strip
 TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 
 ifdef STATIC
+<<<<<<< HEAD
 # Build STATIC if you are redistributing the smallchange binary
+=======
+# Build STATIC if you are redistributing the thcoin binary
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 TESTLIBS += \
  $(DEPSDIR)/lib/libboost_unit_test_framework-mt.a
 LIBS += \
@@ -103,7 +111,11 @@ else
 endif
 endif
 
+<<<<<<< HEAD
 all: smallchange
+=======
+all: thcoin
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 
 # auto-generated dependencies:
 -include obj/*.P
@@ -128,7 +140,11 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
+<<<<<<< HEAD
 smallchange: $(OBJS:obj/%=obj/%)
+=======
+thcoin: $(OBJS:obj/%=obj/%)
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -140,11 +156,19 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
+<<<<<<< HEAD
 test_smallchange: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
 	-rm -f smallchange test_smallchange
+=======
+test_thcoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
+
+clean:
+	-rm -f thcoin test_thcoin
+>>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
