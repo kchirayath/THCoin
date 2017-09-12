@@ -193,11 +193,7 @@ void OptionsDialog::showRestartWarning_Proxy()
 {
     if(!fRestartWarningDisplayed_Proxy)
     {
-<<<<<<< HEAD
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting SmallChange."), QMessageBox::Ok);
-=======
-        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting THCoin."), QMessageBox::Ok);
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
         fRestartWarningDisplayed_Proxy = true;
     }
 }
@@ -206,11 +202,7 @@ void OptionsDialog::showRestartWarning_Lang()
 {
     if(!fRestartWarningDisplayed_Lang)
     {
-<<<<<<< HEAD
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting SmallChange."), QMessageBox::Ok);
-=======
-        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting THCoin."), QMessageBox::Ok);
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
         fRestartWarningDisplayed_Lang = true;
     }
 }

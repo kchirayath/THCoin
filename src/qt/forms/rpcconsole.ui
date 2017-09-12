@@ -11,11 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-<<<<<<< HEAD
    <string>SmallChange - Debug window</string>
-=======
-   <string>THCoin - Debug window</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -326,11 +322,7 @@
        <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-<<<<<<< HEAD
           <string>Open the SmallChange debug logfile from the current data directory. This can take a few seconds for large logfiles.</string>
-=======
-          <string>Open the THCoin debug logfile from the current data directory. This can take a few seconds for large logfiles.</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -356,11 +348,7 @@
        <item row="17" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-<<<<<<< HEAD
           <string>Show the smallchange-qt help message to get a list with possible command-line options.</string>
-=======
-          <string>Show the thcoin-qt help message to get a list with possible command-line options.</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
          </property>
          <property name="text">
           <string>&amp;Show</string>

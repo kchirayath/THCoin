@@ -44,11 +44,7 @@
           <item>
            <widget class="QLabel" name="labelWalletStatus">
             <property name="toolTip">
-<<<<<<< HEAD
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SmallChange network after a connection is established, but this process has not completed yet.</string>
-=======
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the THCoin network after a connection is established, but this process has not completed yet.</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel { color: red; }</string>
@@ -109,11 +105,7 @@
              <string>Your current balance</string>
             </property>
             <property name="text">
-<<<<<<< HEAD
              <string notr="true">0 SMC</string>
-=======
-             <string notr="true">0 THC</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -142,11 +134,7 @@
              <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
             </property>
             <property name="text">
-<<<<<<< HEAD
              <string notr="true">0 SMC</string>
-=======
-             <string notr="true">0 THC</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -189,11 +177,7 @@
              <string>Mined balance that has not yet matured</string>
             </property>
             <property name="text">
-<<<<<<< HEAD
              <string notr="true">0 SMC</string>
-=======
-             <string notr="true">0 THC</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -243,11 +227,7 @@
           <item>
            <widget class="QLabel" name="labelTransactionsStatus">
             <property name="toolTip">
-<<<<<<< HEAD
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SmallChange network after a connection is established, but this process has not completed yet.</string>
-=======
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the THCoin network after a connection is established, but this process has not completed yet.</string>
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel { color: red; }</string>

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 SmallChange 0.1 ALPHA
-=======
-THCoin 0.1 ALPHA
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 
 Copyright (c) 2009-2012 Bitcoin Developers
 Copyright (c) 2011-2012 Litecoin Developers
@@ -16,11 +12,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-<<<<<<< HEAD
 SmallChange is a free open source peer-to-peer electronic cash system that is
-=======
-THCoin is a free open source peer-to-peer electronic cash system that is
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 completely decentralized, without the need for a central server or trusted
 parties.  Users hold the crypto keys to their own money and transact directly
 with each other, with the help of a P2P network to check for double-spending.
@@ -28,7 +20,6 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-<<<<<<< HEAD
 You need the Qt4 run-time libraries to run smallchange-qt. On Debian or Ubuntu:
   sudo apt-get install libqtgui4
 
@@ -37,16 +28,6 @@ Unpack the files into a directory and run:
  bin/32/smallchange (headless, 32-bit)
  bin/64/smallchange-qt (GUI, 64-bit)
  bin/64/smallchange (headless, 64-bit)
-=======
-You need the Qt4 run-time libraries to run thcoin-qt. On Debian or Ubuntu:
-  sudo apt-get install libqtgui4
-
-Unpack the files into a directory and run:
- bin/32/thcoin-qt (GUI, 32-bit)
- bin/32/thcoin (headless, 32-bit)
- bin/64/thcoin-qt (GUI, 64-bit)
- bin/64/thcoin (headless, 64-bit)
->>>>>>> a94af5e6f5c09f4cac3282e0e1b3ab19bcaeec1c
 
 
 See the documentation at the bitcoin wiki:
